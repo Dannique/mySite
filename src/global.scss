@@ -1,0 +1,76 @@
+// #525252 lightergrey
+// #414141 grey
+// #272727 darkgrey
+// #CA3E47 pinkish
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&family=Sanchez:ital@0;1&display=swap');
+
+$navColor: #222222;
+$h1Font:'Flamenco', cursive;
+$fontTwo:'Sanchez', serif;
+
+html {
+    /* background-color: hotpink; */
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
+    /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #222222;
+    //box-shadow: inset 0 0 5px #333333; 
+   // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #3a3a3a; 
+    border-radius: 10px;
+    opacity: 0.3;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8a2a31; 
+  }
+    
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #272727;
+  }
+
+
+
+
+
+
+
+
+// /* width */
+// ::-webkit-scrollbar {
+//     width: 10px;
+//   }
+  
+//   /* Track */
+//   ::-webkit-scrollbar-track {
+//     box-shadow: inset 0 0 5px grey; 
+//     border-radius: 10px;
+//   }
+   
+//   /* Handle */
+//   ::-webkit-scrollbar-thumb {
+//     background: red; 
+//     border-radius: 10px;
+//   }
+  
+//   /* Handle on hover */
+//   ::-webkit-scrollbar-thumb:hover {
+//     background: #b30000; 
+//   }
