@@ -5,13 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Flamenco&family=Sanchez:ital@0;1&display=swap');
 
 $navColor: #222222;
+
 $h1Font:'Flamenco', cursive;
 $fontTwo:'Sanchez', serif;
+$darkPink: #8a2a31;
 
 html {
+  // scroll-margin-top: 0;
+  // scroll-padding-top: 0;
     /* background-color: hotpink; */
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+     scroll-snap-type: y mandatory;
+     scroll-behavior: smooth;
 
     /* width */
 ::-webkit-scrollbar {
@@ -35,12 +39,13 @@ html {
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #8a2a31; 
+    background: $darkPink; 
   }
     
   }
 
   body {
+   // overscroll-behavior-y: none;
     margin: 0;
     overflow-x: hidden;
     background-color: #272727;
