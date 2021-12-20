@@ -5,7 +5,7 @@ import Particles from "react-tsparticles";
 let params = {
   particles: {
     number: {
-      value: 30,
+      value: 35,
       density: {
         enable: true,
         value_area: 800
@@ -91,7 +91,7 @@ let params = {
         size: 40,
         duration: 2,
         opacity: 8,
-        speed: 3
+        speed: 1
       },
       repulse: {
         distance: 150,

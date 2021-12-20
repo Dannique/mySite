@@ -3,8 +3,15 @@
 .portfolio{
     background-color: goldenrod;
     margin: 0;
+    text-align: center;
+
+    .portText{
+        padding-top: 100px;
+        font-size: 3rem;
+    }
+
+    h1{
+        font-family: $h1Font;
+    }
 }
 
-.portText{
-    padding-top: 80px;
-}
