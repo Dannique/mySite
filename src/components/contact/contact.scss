@@ -1,7 +1,14 @@
 @import '../../global.scss';
+
 .contact{
-    background-color: blue;
+
+    text-align: center;
 }
 .contactText{
-    padding-top: 80px;
+    padding-top: 140px;
+    z-index: 1;
+    // position: absolute;
+    color:#CA3E47;
+    // text-align: center;
+    font-size: 4rem;
 }

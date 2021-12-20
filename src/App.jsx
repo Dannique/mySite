@@ -14,6 +14,7 @@ function App() {
       <Topbar/>
       
       <div className="sections">
+      
         <Intro/>
         <About/>
         <Portfolio/>
