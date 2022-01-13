@@ -8,8 +8,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export default function Topbar() {
     return (
-
-    <Navbar collapseOnSelect className='navbar' fixed="top" expand="md" bg="dark" variant="dark">
+    <Navbar collapseOnSelect className='navbar' fixed="top" expand="md" >
     <Container>
     <Navbar.Brand href="#intro"> <img src="https://i.ibb.co/qCfhcLG/Dannique-4-removebg-preview.png" height="65px" width="65px" alt="logo" /> </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -21,9 +20,7 @@ export default function Topbar() {
         </Nav>
       </Navbar.Collapse>
     </Container>
-  </Navbar>
-
-   
+  </Navbar>  
     )
 }
 

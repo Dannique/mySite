@@ -2,18 +2,19 @@
 // #414141 grey
 // #272727 darkgrey
 // #CA3E47 pinkish
-@import url('https://fonts.googleapis.com/css2?family=Flamenco&family=Sanchez:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Roboto:wght@100;300;400;700&family=Sanchez:ital@0;1&display=swap');
 
 $navColor: #222222;
 
 $h1Font:'Flamenco', cursive;
 $fontTwo:'Sanchez', serif;
+$mainFont:'Roboto', sans-serif;
 $darkPink: #8a2a31;
 
 html {
   // scroll-margin-top: 0;
   // scroll-padding-top: 0;
-    /* background-color: hotpink; */
+
     background-color: #0c0c0c;
      scroll-snap-type: y mandatory;
      scroll-behavior: smooth;
@@ -47,6 +48,8 @@ html {
 
   body {
    // overscroll-behavior-y: none;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 100;
     margin: 0;
     overflow-x: hidden;
     background-color: #0c0c0c;

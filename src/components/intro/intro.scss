@@ -23,18 +23,19 @@
     .introTwo{
         color:#d6c2c3;
         font-size: 2.7rem;
-        font-family: $fontTwo;
-       
+        font-family: $mainFont;
+       font-weight: 100;
     }
 
     h3{
         color:#d6c2c3;
-        font-family: $fontTwo;
+        font-weight: 300;
     }
 
 
     span{
         color:#CA3E47;
+        font-family:$fontTwo;
     }
 
     .ityped-cursor {
