@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./particles.scss";
 import Particles from "react-tsparticles";
 
@@ -53,7 +53,7 @@ let params = {
     },
     move: {
       enable: true,
-      speed: 1.5,
+      speed: 1,
       direction: "none",
       random: false,
       straight: false,
@@ -108,14 +108,11 @@ let params = {
   retina_detect: true
 };
 
-class Particle extends Component {
-  render() {
-    return (
-      <div id="particles-js">
-        <Particles width="100vw" height="100vh" params={params} />
-      </div>
-    );
-  }
+export default function Particle(){
+  return(
+    <div id="particles-js">
+    <Particles width="100vw" height="100vh" params={params} />
+  </div>
+  )
 }
 
-export default Particle;
