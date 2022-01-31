@@ -29,7 +29,7 @@ let params = {
       random: false,
       anim: {
         enable: false,
-        speed: 1,
+        speed: 1.2,
         opacity_min: 0.8,
         sync: false
       }

@@ -1,72 +1,38 @@
-.loadSection{
-    height:100vh;
-    background-color: #222222;
+@import '../../global.scss';
 
-
-
-.loader{
-	position: absolute;
-	top: 25%;
-	left: 60%;
-	transform-origin: 50% 50%;
-	transform: rotate(90deg) translate(-50%, 0%);
-	font-size: 90px;
-	width: 1em;
-	height: 3em;
-	color: #CA3E47;
-
-	.paw{
-		width: 1em;
-		height: 1em;
-		animation: 2050ms pawAnimation ease-in-out infinite;
-		opacity: 0;
-		
-		svg{
-			width: 100%;
-			height: 100%;
-		}
-		
-		.icon{
-			fill: currentColor;
-		}
-
-		&:nth-child(odd){
-			transform: rotate(-10deg);
-		}
-
-		&:nth-child(even){
-			transform: rotate(10deg) translate(125%, 0);
-		}
-
-		@for $i from 1 through 9{
-            &:nth-child(#{$i}){
-            	animation-delay: #{ (($i * -1)+6)*0.25 }s;
-            }
-        }
-
-        .no-cssanimations &{
-        	opacity: 1;
-        }
+.loadScreen {
+	color: #fff;
+	height: 100vh;
+	overflow: hidden;
+	background: #0e0d0d;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .lumiText {
+	background: 50% 100% / 50% 50% no-repeat
+				radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-size: 8vw;
+	font-family: $fontTwo, sans-serif;
+	animation: reveal 2000ms ease-in-out forwards 200ms,
+				glow 2500ms linear infinite 2000ms;
+  
+	@keyframes reveal {
+	  80%{
+		letter-spacing: 18px;
+	  }
+	  100% {
+		background-size: 300% 300%;
+	  }
 	}
-}
-
-@keyframes pawAnimation {
-	0%{
-		opacity: 1;
+	@keyframes glow {
+	  40% {
+		text-shadow: 0 0 8px #fff;
+	  }
 	}
-	50%{
-		opacity: 0;
-	}
-	100%{
-		opacity: 0;
-	}
-}
-
-.loadText{
-    color:#CA3E47;
-    position: relative;
-    left:45%;
-    top:55%;
-}
-
-}
+  }  
+  

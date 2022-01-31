@@ -5,12 +5,14 @@ import TextField from "@mui/material/TextField";
 import TextareaAutosize from "@mui/material/TextareaAutosize";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
+
 import CircularProgress from "@mui/material/CircularProgress";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from "@mui/icons-material/Email";
 import PersonIcon from "@mui/icons-material/Person";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Arrow from '../arrowup/Arrow'
 
 const CssTextField = styled(TextField)({
   "& label.Mui-focused": {
@@ -46,12 +48,16 @@ export default function Form() {
   return (
     <div id="contact" className="contact">
 
+
+<p>Feel free to ask me any question.</p>
+
     <div className="formContainer">
 
     <div className="contactH1">
     <h1>Get In Touch.</h1>
         <hr />
         </div>
+
 
       <div className="form"> 
 
@@ -108,6 +114,7 @@ export default function Form() {
           )}
         </form>
       </div>
+      <Arrow/>
     </div>
     
 
@@ -133,6 +140,10 @@ export default function Form() {
 
           <div className="linkedin">
             <p> <LinkedInIcon className="icon li"/> <a href="linkedin.com">LinkedIn</a></p>
+          </div>
+
+          <div className="codeSandBox">
+            <p> <LinkedInIcon className="icon li"/> <a href="linkedin.com">CodeSandBox?</a></p>
           </div>
 
         </div>

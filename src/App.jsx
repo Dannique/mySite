@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Topbar from './components/navbar/Navbar'
+// import Topbar from './components/navbar/Navbar'
+// import Menu from './components/menu/Menu'
 import About from  './components/about/About'
 import Intro from './components/intro/Intro'
 import Portfolio from './components/portfolio/Portfolio'
@@ -11,10 +12,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
+  // const [menuOpen, setMenuOpen] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
+    setTimeout(() => setLoading(false), 3500);
   }, []);
 
   return (
@@ -23,7 +25,8 @@ function App() {
 
     <div className="app">
 
-      <Topbar/>
+      {/* <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
       
       <div className="sections">
 

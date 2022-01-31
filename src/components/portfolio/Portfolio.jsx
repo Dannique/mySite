@@ -1,6 +1,7 @@
 import './portfolio.scss';
 import Card from "./Card";
 import cards from "../../cardData";
+import Arrow from '../arrowup/Arrow';
 
 function createCard(card) {
   return (
@@ -30,6 +31,7 @@ export default function Portfolio() {
       {cards.map(createCard)}
 
       </div>
+      <Arrow/>
     </div>
     )
 }
