@@ -2,13 +2,57 @@
 
 
 
-#about{
-    background: linear-gradient(0deg, rgba(14,13,13,1) 38%, rgba(48, 45, 45, 0) 100%);
-    margin:0;
-    // position:static;
-    // z-index: 7;
-}
+#about {
+    background: linear-gradient(0deg, rgba(14, 13, 13, 1) 38%, rgba(48, 45, 45, 0) 100%);
+    margin: 0;
+    display: flex;
 
-.aboutText{
-    padding-top: 80px;
+    .aboutText {
+        padding-top: 80px;
+        color: $pink
+    }
+
+    .left {
+        flex: 1
+    }
+
+
+    .right {
+        flex: 1;
+
+           
+        
+
+        .skillDiv {
+            max-width: 500px;
+            border: 2px solid white;
+            padding: 20px;
+        }
+
+        .skillbar-title {
+            letter-spacing: 1px;
+
+            span{
+                margin-right:10px;
+            }
+
+        }
+
+        /* span{
+    padding:none;
+  } */
+
+        .skillbar {
+            background: transparent;
+            margin-bottom: 10px;
+        }
+
+        .skillbar-percent {
+            color: white;
+            position: relative;
+            left: 115px
+        }
+
+    }
+
 }

@@ -7,7 +7,7 @@ import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import LoadingScreen from './components/loader/LoadingScreen';
 import './app.scss'
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 //import {} from '@mui/icons-material';
 
 function App() {

@@ -9,10 +9,9 @@ $h1Font:'Flamenco', cursive;
 $fontTwo:'Sanchez', serif;
 $mainFont:'Roboto', sans-serif;
 $darkPink: #8a2a31;
+$pink: #CA3E47;
 
 html {
-  // scroll-margin-top: 0;
-  // scroll-padding-top: 0;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -33,8 +32,6 @@ html {
   /* Track */
   ::-webkit-scrollbar-track {
     background: #222222;
-    //box-shadow: inset 0 0 5px #333333; 
-   // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
   }
    
   /* Handle */

@@ -2,23 +2,26 @@
 
 
 .intro{
+  display: flex;
     // background-image: url(../../images/backgroundVaren.jpg);
     //background-color: lightcoral;
     // background-size:cover;
     // background-repeat: no-repeat;
     // margin-top: -80px;
     // text-align: center;
- 
     // font-family: $h1Font;
-.introText{
+.left{
+  flex:1;
+
+  .introText{
     margin-left:10%;
     .firstText{
         padding-top: 140px;
         position: relative;
-        
+        margin:0;
         //z-index: 1;
         font-family: $h1Font;
-        color:#CA3E47;
+        color:$pink;
         // text-align: center;
         font-size: 4rem;
     }
@@ -26,6 +29,7 @@
         color:#d6c2c3;
         font-size: 2.7rem;
         font-family: $mainFont;
+        margin: 5px;
        font-weight: 100;
        
     }
@@ -33,11 +37,12 @@
     h3{
         color:#d6c2c3;
         font-weight: 300;
+        font-size: 2em;
     }
 
 }
     span{
-        color:#CA3E47;
+        color:$pink;
         font-family:$fontTwo;
     }
 
@@ -61,7 +66,7 @@
         width: 90%;
         margin: 40px auto;
         text-align: center;
-        font-family: $mainFont;
+
         
         a{
           text-decoration: none;
@@ -75,8 +80,8 @@
       
       }
       .custom-btn {
-       width: 195px;
-       height: 45px;
+       width: 210px;
+       height: 52px;
       /*   padding: 10px 25px; */
         border: 2px solid white;
        // font-family: 'Lato', sans-serif;
@@ -88,16 +93,20 @@
         display: inline-block;
       }
       
-      
-      
-      
-      /* 3 */
+      .btn-text{
+        font-family: $mainFont;
+        font-weight: 300;
+        font-size: 1.3em;
+        color:white;
+        position: relative;
+        margin:0;
+      }
       .btn-3 {
         line-height: 39px;
         padding: 0;
       }
       .btn-3:hover{
-        color: #CA3E47;
+        color: $pink;
       }
       .btn-3 span {
         position: relative;
@@ -111,18 +120,18 @@
       .btn-3:after {
         position: absolute;
         content: "";
-        left: 0;
-        top: 0;
+        left: -1px;
+        top: -1px;
         background: white;
         transition: all 0.3s ease;
       }
       .btn-3:before {
         height: 0%;
-        width: 2px;
+        width: 3px;
       }
       .btn-3:after {
         width: 0%;
-        height: 2px;
+        height: 3px;
       }
       .btn-3:hover:before {
         height: 100%;
@@ -134,25 +143,30 @@
       .btn-3 span:after {
         position: absolute;
         content: "";
-        right: 0;
-        bottom: 0;
-        background: white;
+        right: -1px;
+        bottom: -1px;
+        background: $pink;
         transition: all 0.3s ease;
       }
       .btn-3 span:before {
-        width: 2px;
+        width: 3px;
         height: 0%;
       }
       .btn-3 span:after {
         width: 0%;
-        height: 2px;
+        height: 3px;
       }
       .btn-3 span:hover:before {
         height: 100%;
-        color:#CA3E47
+        color:$pink
       }
       .btn-3 span:hover:after {
         width: 100%;
       }
+    }
+  }
+
+    .right{
+      flex:.6
     }
 }
