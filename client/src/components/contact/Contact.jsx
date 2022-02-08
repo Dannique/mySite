@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import "./contact.scss"
+import FadeIn from '../fade/FadeIn';
 import { styled } from "@mui/material/styles";
 import TextField from "@mui/material/TextField";
 import TextareaAutosize from "@mui/material/TextareaAutosize";
@@ -50,7 +51,7 @@ export default function Form() {
 
 
 <p>Feel free to ask me any question.</p>
-
+<FadeIn>
     <div className="formContainer">
 
     <div className="contactH1">
@@ -114,10 +115,10 @@ export default function Form() {
           )}
         </form>
       </div>
-      <Arrow/>
-    </div>
     
-
+    </div>
+    </FadeIn>
+    <Arrow/>
     <div className="footerRight">
 
         <div className="details">

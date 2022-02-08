@@ -2,6 +2,7 @@
 // #414141 grey
 // #272727 darkgrey
 // #CA3E47 pinkish
+// $background: #0e0d0d;
 @import url('https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Roboto:wght@100;300;400;700&family=Sanchez:ital@0;1&display=swap');
 
 $navColor: #222222;
@@ -19,7 +20,7 @@ html {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
-    background-color: #0c0c0c;
+    background-color: #181818;
      scroll-snap-type: y mandatory;
      scroll-behavior: smooth;
 

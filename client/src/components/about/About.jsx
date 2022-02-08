@@ -61,11 +61,14 @@ const skills = [
 export default function About() {
     return(
     <div className="about" id="about">
-        <h1 className="aboutText">about</h1>
+       
         <Arrow/>
         <div className="left">
 
+          <div className="textDiv">
+            <h1 className="aboutText">about</h1>
             <h1 className="aboutText">left</h1>
+          </div>
 
         </div>
 
