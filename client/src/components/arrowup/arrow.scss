@@ -1,12 +1,12 @@
- 
  .arrow {
-   
-        animation: arrowBlink 5s infinite;
-      
+  position:absolute;
+  left:15px;
+  margin-top: 20px;
 
-      @keyframes arrowBlink {
-        40% {
-          opacity: 0.3;
-        }
-      }
+   animation: arrowBlink 5s infinite;
+   @keyframes arrowBlink {
+     40% {
+       opacity: 0.3;
+     }
+   }
  }

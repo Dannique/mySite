@@ -1,137 +1,161 @@
 @import '../../global.scss';
 
-.portfolio{
- // background-color: rgba(255, 255, 255, 0.541);
- //background-image: -webkit-linear-gradient(70deg, rgba(0, 0, 0, 0) 50%, #DED6CF 50%);
- //background-repeat: no-repeat;
- background: linear-gradient(0deg, rgba(14,13,13,0) 12%, rgba(24,24,24,1) 70%);
-  height:100vh;
-}
-
-/*     Normal Card     */
-
-.card-container {
-  display: flex;
- // align-self: center;
-  //position: absolute;
-  flex-wrap: wrap;
-  padding-top:74px;
-  max-width: 1300px;
-}
-
-.normalCard {
-
-  width: 180px;
-  height: 180px;
-  display: grid;
-  place-items: end center;
-  margin: 15px 23px;
-  border-radius: 10px;
-  -webkit-box-shadow: 4px 6px 12px -2px rgba(0, 0, 0, 0.47);
-  box-shadow: 4px 6px 12px -2px rgba(0, 0, 0, 0.47);
-  background-size: cover;
-  background-repeat: no-repeat;
-  
-   h1 {
-    font-size: 16px;
-    color: #dadada;
-    text-shadow:2px 1px 2px rgba(0,0,0,0.9);
-    backdrop-filter: blur(2px);
-    width:100%;
-    margin:0;
-    padding: 5px 0 10px;
-    border-radius: 0px 0px 10px 10px;
-    text-align: center;
-    font-family: 'Sanchez';
-  
-  }
-
-  @media only screen and (max-width: 750px){
-    height:150px;
-    width:150px
-  }
-  @media only screen and (max-width: 400px){
-    height:110px;
-    width:110px
-  }
-  @media only screen and (max-width: 320px){
-    height:90px;
-    width:90px;
-  }
-
-
-
-}
-/*     expanded card      */
-
-a{
-  text-decoration: none;
-  font-size: 1.2em;
-  color: #C86E55;
-}
-
-a:hover{
-  color:lightslategray;
-}
-
-p {
-  color:#000000;
-  padding: 5px;
-  font-size: 1.2em;
-}
-
-.expanded-card-h {
-font-size: 1.8em;
-}
-
-
-
-/*     Horizontally Expanded     */
-
-.expandedCardHor {
-  position: absolute;
-  display: grid;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
+.portfolio {
+  background: linear-gradient(0deg, rgba(14, 13, 13, 0) 12%, rgba(24, 24, 24, 1) 70%);
   height: 100vh;
- z-index: 1;
- min-height: 100vh;
-//place-items: center;
- font-family: 'Sanchez';
+ // display: flex;
 
- @media only screen and (max-width: 828px){
-   font-size:.9em;
- 
-   .infoHor{
-    max-width:600px;
+
+  .titleDiv {
+
+    text-align: center;
+
+    .title {
+      letter-spacing: 3px;
+      font-family: $h1Font;
+      font-weight: bold;
+      font-size: 2.5em;
+      color: $pink;
+    }
+
+    .titleP{
+      color: white;
+      font-size: 1.2em;
+      font-weight: 300;
+    }
 
   }
- }
 
- @media only screen and (max-width: 500px){
-  .infoHor{
-    max-width:400px;
+  /*     Normal Card     */
+
+  .card-container {
+    display: flex;
+   // text-align: center;
+   border: 3px solid white;
+     align-items: center;
+    //position: absolute;
+    flex-wrap: wrap;
+   // padding-top: 74px;
+    max-width: 1300px;
+  }
+
+  .normalCard {
+
+    width: 180px;
+    height: 180px;
+    display: grid;
+    place-items: end center;
+    margin: 15px 23px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 6px 12px -2px rgba(0, 0, 0, 0.47);
+    box-shadow: 4px 6px 12px -2px rgba(0, 0, 0, 0.47);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1 {
+      font-size: 16px;
+      color: #dadada;
+      text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(2px);
+      width: 100%;
+      margin: 0;
+      padding: 5px 0 10px;
+      border-radius: 0px 0px 10px 10px;
+      text-align: center;
+      font-family: 'Sanchez';
+
+    }
+
+    @media only screen and (max-width: 750px) {
+      height: 150px;
+      width: 150px
+    }
+
+    @media only screen and (max-width: 400px) {
+      height: 110px;
+      width: 110px
+    }
+
+    @media only screen and (max-width: 320px) {
+      height: 90px;
+      width: 90px;
+    }
+
+
 
   }
- }
 
- @media only screen and (max-width: 410px){
-  .infoHor{
-    max-width:200px
-  }
- }
+  /*     expanded card      */
 
-}
-  .classExpandedImgHor{
-   width: 100%;
+  a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #C86E55;
   }
- 
-  .infoHor{
+
+  a:hover {
+    color: lightslategray;
+  }
+
+  p {
+    color: #000000;
+    padding: 5px;
+    font-size: 1.2em;
+  }
+
+  .expanded-card-h {
+    font-size: 1.8em;
+  }
+
+
+
+  /*     Horizontally Expanded     */
+
+  .expandedCardHor {
+    position: absolute;
+    display: grid;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    min-height: 100vh;
+    //place-items: center;
+    font-family: 'Sanchez';
+
+    @media only screen and (max-width: 828px) {
+      font-size: .9em;
+
+      .infoHor {
+        max-width: 600px;
+
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .infoHor {
+        max-width: 400px;
+
+      }
+    }
+
+    @media only screen and (max-width: 410px) {
+      .infoHor {
+        max-width: 200px
+      }
+    }
+
+  }
+
+  .classExpandedImgHor {
+    width: 100%;
+  }
+
+  .infoHor {
     margin: 20px auto;
     text-align: center;
     max-width: 800px;
-    flex-basis:  100%;
+    flex-basis: 100%;
     display: flex;
     flex-direction: column;
 
@@ -143,78 +167,82 @@ font-size: 1.8em;
 
   .expandedCardVer {
     position: absolute;
-    top:0;
+    top: 0;
     width: 100vw;
     z-index: 1;
     height: 100vh;
     display: flex;
     font-family: 'Sanchez';
-  
-   @media only screen and (max-width: 970px){
-     flex-direction: column;
-     height:100vh;
-     font-size:.75em;
-   
-   }
+
+    @media only screen and (max-width: 970px) {
+      flex-direction: column;
+      height: 100vh;
+      font-size: .75em;
+
+    }
   }
 
-.classExpandedImgVer{
-  display: block;
-  max-width: 100%;
+  .classExpandedImgVer {
+    display: block;
+    max-width: 100%;
 
-  @media only screen and (max-width: 970px){
-    height:80vh; 
-    width: 75vw;
+    @media only screen and (max-width: 970px) {
+      height: 80vh;
+      width: 75vw;
 
-  }
-  @media only screen and (max-width: 666px){
-    height: 100vh;
-    width: 100vh;
-  }
+    }
+
+    @media only screen and (max-width: 666px) {
+      height: 100vh;
+      width: 100vh;
+    }
   }
 
-  .infoVer{
+  .infoVer {
     flex-grow: 1;
-    flex-shrink:  1;
-    flex-basis:  100%;
+    flex-shrink: 1;
+    flex-basis: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:0 20px 0 20px;
-      }
-
-/*     expanded background colors     */
-
-.whiteBackground{
-  background-color: rgb(253, 247, 247);
-}
-
-.simonColor{
-  background-color:#ABADBB;
-}
-
-  .todoColor{
-   background-color: #B69B3A;
+    padding: 0 20px 0 20px;
   }
 
-  .motionColor{
+  /*     expanded background colors     */
+
+  .whiteBackground {
+    background-color: rgb(253, 247, 247);
+  }
+
+  .simonColor {
+    background-color: #ABADBB;
+  }
+
+  .todoColor {
+    background-color: #B69B3A;
+  }
+
+  .motionColor {
     background-color: #D7D1F8;
   }
 
-  .weatherAppColor{
+  .weatherAppColor {
     background-color: #B8C8DD;
   }
-  .secretColor{
+
+  .secretColor {
     background-color: rgba(243, 139, 107, 0.932);
   }
-.newsletterColor{
-  background-color: #F49E73;
+
+  .newsletterColor {
+    background-color: #F49E73;
+  }
 }
 
-  // .normalCardWrap{
+// .normalCardWrap{
 
-  //   top: 74px;
-  // }
+//   top: 74px;
+// }
 
 //     .card-container {
 //         display: flex;
@@ -225,7 +253,7 @@ font-size: 1.8em;
 
 
 //        .normalCard {
-      
+
 //         width: 200px;
 //         height: 200px;
 //         display: grid;
@@ -236,9 +264,9 @@ font-size: 1.8em;
 //         box-shadow: 4px 6px 12px -2px rgba(0, 0, 0, 0.47);
 //         background-size: cover;
 //         background-repeat: no-repeat;
-        
-      
-      
+
+
+
 //          h1 {
 //           font-size: 18px;
 //           color: #dadada;
@@ -251,17 +279,17 @@ font-size: 1.8em;
 //           text-align: center;
 //           font-family: 'Sanchez';
 //         }
-      
-      
-      
+
+
+
 //       }
 
 //       }
-      
+
 //       /* normal card css*/
-      
 
-  
+
+
 
 //       /* expanded card css*/ 
 //       .expandedCard {
@@ -272,20 +300,20 @@ font-size: 1.8em;
 //            width: 100vw;
 //            height:100vh;
 //             z-index: 9999;
- 
+
 //           // z-index: 1500;
-         
+
 //            //display: grid;
 //           // place-items: center;
 //            font-family: 'Sanchez';
-         
-         
+
+
 //            a{
 //              text-decoration: none;
 //              font-size: 1.2em;
 //              color: #C86E55;
 //            }
-         
+
 //            a:hover{
 //              color:lightslategray;
 //            }
@@ -299,13 +327,13 @@ font-size: 1.8em;
 //             // text-align: center;
 //             // padding: 5px;
 //           }
-          
+
 //            .classExpandedImgVer{
 //             height:100%;
 //             width:auto;
 //              float: left;
 //            }
-         
+
 //            .infoHor{
 //              text-align: center;
 //              margin: auto;
@@ -316,7 +344,7 @@ font-size: 1.8em;
 //              // //padding: 5px;  
 
 //            }
-         
+
 //            .infoVer{
 //            //  // padding: 5px;  
 //               max-width: 650px;
@@ -325,12 +353,12 @@ font-size: 1.8em;
 //            //   // right: 16px;
 //              top: 20%;
 //               right: 3%;
-  
-         
+
+
 //            }
-         
-         
-         
+
+
+
 //            p {
 //              color:#000000;
 //              // max-width: 900px;
@@ -338,37 +366,33 @@ font-size: 1.8em;
 //              font-size: 1.2em;
 //              //place-self: start center;
 //            }
-         
-//          }
-        
 
-      
+//          }
+
+
+
 //       .whiteBackground{
 //         background-color: rgb(253, 247, 247);
 //       }
-      
+
 //       .simonColor{
 //        // background: rgb(54,67,73);
 //        // background: linear-gradient(90deg, rgba(54,67,73,1) 53%, rgba(90,105,112,1) 95%, rgba(90,105,112,1) 100%);
 //       background-color:#ABADBB;
 //       }
-      
+
 //         .todoColor{
 //           background-color: #B69B3A;
 //         }
-      
+
 //         .motionColor{
 //           background-color: #D7D1F8;
 //         }
-      
+
 //         .drumkitColor{
 //           background-color:#404B69;
 //         }
-      
 
-       
+
+
 // }
-
-
-
-

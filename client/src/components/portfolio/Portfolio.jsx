@@ -29,6 +29,11 @@ function createCard(card) {
 export default function Portfolio() {
     return (
       <div className="portfolio" id="portfolio">
+       <Arrow />
+       <div className='titleDiv'>
+         <h1 className='title'>MY PROJECTS</h1>
+         <p className='titleP'>Here are some of my projects screenshotted, there's link to the site or to Github, with an explanation. </p>
+       </div>
       <FadeIn>
       <div className="card-container">
 
@@ -36,7 +41,7 @@ export default function Portfolio() {
 
       </div>
       </FadeIn>
-      <Arrow/>
+     
     </div>
     )
 }

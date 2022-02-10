@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import { init } from 'ityped';
 import Particlebackground from '../particles/Particles';
 import Me from "../../images/niekhd.png";
+
 //import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
@@ -42,11 +43,11 @@ export default function Intro() {
 
         <div className='right'>
           <div className='avatarDiv'>
-               <img src={Me} alt="cartoon of me" className='avatar' height="372px" width="372px" />  
+               <img src={Me} alt="cartoon of me" className='avatar' height="412px" width="412px" />  
              </div>
         </div>
 
-
+        
       </div>
 
     )
