@@ -12,18 +12,19 @@ import EmailIcon from "@mui/icons-material/Email";
 import PersonIcon from "@mui/icons-material/Person";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+//import codeSandBox from "../../images/codesandbox.png"
 import Arrow from '../arrowup/Arrow'
 
 const CssTextField = styled(TextField)({
   "& label.Mui-focused": {
-    color: "green"
+    color: "#CA3E47;"
   },
   "& .MuiInput-underline:after": {
-    borderBottomColor: "green"
+    borderBottomColor: "#CA3E47;"
   },
   "& .MuiOutlinedInput-root": {
     "&.Mui-focused fieldset": {
-      borderColor: "green"
+      borderColor: "#CA3E47;"
     }
   }
 });
@@ -49,17 +50,17 @@ export default function Form() {
     <div id="contact" className="contact">
 
 
-<p>Feel free to ask me any question.</p>
+
 <FadeIn>
     <div className="formContainer">
 
     <div className="contactH1">
-    <h1>Get In Touch.</h1>
-        <hr />
+    <h1>GET IN TOUCH</h1>
+     
         </div>
 
 
-      <div className="form"> 
+      <div className="formDiv"> 
 
         <form onSubmit={handleSubmit} >
 
@@ -119,36 +120,37 @@ export default function Form() {
     </FadeIn>
     <Arrow/>
     <div className="footerRight">
-
+          <h1>DETAILS</h1>
+          <hr />
         <div className="details">
 
           <div className="personal me"> 
-            <p> <PersonIcon /> Dannique de Klerk</p>
+            <p> <PersonIcon  className="icon personal"/> <span className="text">Dannique de Klerk </span> </p>
           </div>
 
           <div className="address">
-            <p> <LocationOnIcon className="icon address"/> Dordrecht,<br/> The Netherlands</p>
+            <p> <LocationOnIcon className="icon address"/> <span className="text"> Dordrecht,<br/> <span className="NL">The Netherlands</span> </span></p>
           </div>
 
           <div className="email">
-            <p> <EmailIcon className="icon email"/> <a href="danniqueeg@gmail.com"> danniqueeg@gmail.com </a></p>
+            <p> <EmailIcon className="icon email"/> <a href="mailto:danniqueeg@gmail.com"> <span className="text">danniqueeg@gmail.com </span></a></p>
           </div>
 
           <div className="github">
-            <p> <GitHubIcon className="icon gh"/> <a href="https://github.com/Dannique">GitHub</a></p>
+            <p> <GitHubIcon className="icon gh"/> <a href="https://github.com/Dannique"><span className="text">GitHub</span></a></p>
           </div>
 
           <div className="linkedin">
-            <p> <LinkedInIcon className="icon li"/> <a href="linkedin.com">LinkedIn</a></p>
+            <p> <LinkedInIcon className="icon li"/> <a href="linkedin.com"><span className="text">LinkedIn</span></a></p>
           </div>
 
-          <div className="codeSandBox">
-            <p> <LinkedInIcon className="icon li"/> <a href="linkedin.com">CodeSandBox?</a></p>
-          </div>
+          {/* <div className="codeSandBox">
+            <p> <img src={codeSandBox} alt="boxIcon" width="23px" height="23px" className="icon cs"/> <a href="linkedin.com"><span className="text">CodeSandBox?</span></a></p>
+          </div> */}
 
         </div>
           
-        <p className="copyright">Copyright 2022 Dannique</p>
+        <p className="copyright">Handcrafted by ©Dannique 2022</p>
        
     </div>
 

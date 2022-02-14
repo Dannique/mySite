@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import Topbar from './components/navbar/Navbar'
-// import Menu from './components/menu/Menu'
 import About from  './components/about/About'
 import Intro from './components/intro/Intro'
 import Portfolio from './components/portfolio/Portfolio'
@@ -25,9 +23,7 @@ function App() {
 
     <div className="app">
 
-      {/* <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
-      
+
       <div className="sections">
 
         <Intro/>

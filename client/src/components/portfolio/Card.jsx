@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { AnimateSharedLayout, motion } from "framer-motion";
-//import Navbar from "../navbar/Navbar";
-import '../navbar/navbar.scss';
+
 
 export default function Card(props) {
 

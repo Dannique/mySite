@@ -3,22 +3,28 @@
 .portfolio {
   background: linear-gradient(0deg, rgba(14, 13, 13, 0) 12%, rgba(24, 24, 24, 1) 70%);
   height: 100vh;
- // display: flex;
+  text-align: center;
+  justify-content: center;
+//     align-items: center;
+ display: flex;
+  //flex-wrap: wrap;
 
 
   .titleDiv {
-
-    text-align: center;
+    // display: flex;
+    position: absolute;
+    margin-top:30px;
 
     .title {
       letter-spacing: 3px;
+      text-align: center;
       font-family: $h1Font;
       font-weight: bold;
       font-size: 2.5em;
       color: $pink;
     }
 
-    .titleP{
+    .titleP {
       color: white;
       font-size: 1.2em;
       font-weight: 300;
@@ -30,17 +36,20 @@
 
   .card-container {
     display: flex;
-   // text-align: center;
-   border: 3px solid white;
-     align-items: center;
-    //position: absolute;
+    //align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 240px;
+    padding: 20px 0;
+    background-color: $background;  
+    border: 3px solid white;
+
     flex-wrap: wrap;
-   // padding-top: 74px;
-    max-width: 1300px;
+    // padding-top: 74px;
+    max-width: 1200px;
   }
 
   .normalCard {
-
     width: 180px;
     height: 180px;
     display: grid;
@@ -54,7 +63,7 @@
 
     h1 {
       font-size: 16px;
-      color: #dadada;
+      color: #cfcfcf;
       text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.9);
       backdrop-filter: blur(2px);
       width: 100%;
@@ -112,15 +121,19 @@
   /*     Horizontally Expanded     */
 
   .expandedCardHor {
+   // display: flex;
+   // margin: auto;
     position: absolute;
-    display: grid;
+    flex-direction: column;
+   // display: grid;
     top: 0px;
-    left: 0px;
+   //left: 1%;
+    //left:0px;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    min-height: 100vh;
-    //place-items: center;
+   // min-height: 100vh;
+  // align-self: center;
     font-family: 'Sanchez';
 
     @media only screen and (max-width: 828px) {
@@ -166,12 +179,16 @@
   /*     Vertically Expanded    */
 
   .expandedCardVer {
+    display: flex;
+   // flex-direction: column;
     position: absolute;
     top: 0;
+    // left:0;
     width: 100vw;
     z-index: 1;
     height: 100vh;
-    display: flex;
+   
+    
     font-family: 'Sanchez';
 
     @media only screen and (max-width: 970px) {

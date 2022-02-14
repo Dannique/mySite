@@ -8,7 +8,7 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 
 //app.use(express.static(path.resolve(__dirname, '../client/build')));
 
-app.get('/api', (req, res) => { 
+app.get('/', (req, res) => { 
   res.send("Data is send!"); 
 }); 
 

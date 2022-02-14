@@ -29,7 +29,7 @@ export default function Intro() {
              <h1 className="firstText">Hi!</h1>
              <h2 className="introTwo">My Name Is Dannique.</h2>
              <h2 className="introTwo"> I Am A Self-Taught Full-Stack Web Developer.</h2>
-             <h3> Lorem ipsum dolor sit amet, consectetur <b><span ref={textRef}></span></b></h3>  
+             <h3> I got your back when it comes to: <b><span ref={textRef}></span></b></h3>  
              </div>
 
 

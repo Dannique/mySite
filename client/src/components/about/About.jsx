@@ -2,7 +2,7 @@ import "./about.scss";
 import Arrow from '../arrowup/Arrow'
 import FadeIn from '../fade/FadeIn';
 //import SkillBar from "react-skillbars";
-import Test from "../../images/git.png"
+import Resume from "../../assets/DanniqueCV.pdf"
 
 // const skills = [
 //     {
@@ -79,7 +79,7 @@ export default function About() {
               Fusce consectetur malesuada tellus, ut lobortis nisl imperdiet eu.
               </p>
               <div className="btnDiv">
-            <button class="custom-btn btn-3"><a href={Test} download="Dannique's CV"><span className='border'><p className='btn-text'>Download CV</p></span></a></button>
+            <button class="custom-btn btn-3"><a href={Resume} download="Dannique's CV"><span className='border'><p className='btn-text'>Download CV</p></span></a></button>
             </div>
           </div>
         
