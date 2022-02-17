@@ -80,7 +80,12 @@
         }
 
       }
-
+.emailErr{
+  color:$pink;
+  font-weight: 300;
+  padding:0;
+  margin-bottom:6px;
+}
       button {
         margin: 30px auto;
         width: 130px;
@@ -157,7 +162,7 @@
       font-size: 1.1em;
 
       .NL{
-        margin-left: 35px;
+        margin-left: 43px;
       }
 
       a {

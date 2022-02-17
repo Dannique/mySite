@@ -1,120 +1,192 @@
 @import '../../global.scss';
 
 
-.intro{
+.intro {
   display: flex;
-  background: linear-gradient(0deg, rgba(24,24,24,0) 18%, rgba(24,24,24,0.8323704481792717) 65%, rgba(24,24,24,1) 83%);
-    // background-image: url(../../images/backgroundVaren.jpg);
-    //background-color: lightcoral;
-    // background-size:cover;
-    // background-repeat: no-repeat;
-    // margin-top: -80px;
-    // text-align: center;
-    // font-family: $h1Font;
-.left{
-  flex:1;
-  //background-color:#181818;
+  background: linear-gradient(0deg, rgba(24, 24, 24, 0) 18%, rgba(24, 24, 24, 0.8323704481792717) 65%, rgba(24, 24, 24, 1) 83%);
+  overflow: hidden;
 
-  .introText{
-    margin-left:10%;
 
-    .firstText{
+  .left {
+    flex: 1;
+
+    .introText {
+      margin-left: 10%;
+
+      @media screen and (max-width: 990px) {
+        margin-left: 5%;
+      }
+
+      @media screen and (max-width: 693px) {
+        max-width: 690px;
+        margin: 0 3%;
+      }
+
+      .firstText {
         padding-top: 140px;
         position: relative;
-        margin:0;
+        margin: 0;
         font-family: $h1Font;
-        color:$pink;
+        color: $pink;
         font-size: 4rem;
-    }
-    .introTwo{
-        color:white;
+
+        @media screen and (max-width: 693px) {
+          position: relative;
+          padding: 85px 0 40px 0;
+        }
+      }
+
+      .introTwo {
+        color: white;
         font-size: 2.7rem;
         font-family: $mainFont;
         margin: 5px;
-       font-weight: 200;
-       
-    }
+        font-weight: 200;
 
-    h3{
-        color:white;
+        @media screen and (max-width: 992px) {
+          font-size: 2rem;
+
+        }
+
+        @media screen and (max-width: 693px) {
+          font-size: 1.5rem;
+          width: 100vw;
+          font-weight: 300;
+        }
+      }
+
+      h3 {
+        color: white;
         font-weight: 200;
         font-size: 2em;
+        margin-left: 5px;
+
+        @media screen and (max-width: 1222px) {
+          font-size: 1.5rem;
+          position: absolute;
+          margin-top: 50px;
+        }
+
+        @media screen and (max-width: 693px) {
+          font-size: 1.3rem;
+          margin-top: 20px;
+        }
+
+
+      }
+
     }
 
-}
-    span{
-        color:$pink;
-        font-family:$fontTwo;
+    span {
+      color: $pink;
+      font-family: $fontTwo;
+    }
+
+    .break {
+      display: none;
+
+      @media screen and (max-width: 693px) {
+        display: inline-block;
+      }
     }
 
     .ityped-cursor {
-        animation: blink 1s infinite;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 1;
       }
 
-      @keyframes blink {
-          50%{
-              opacity: 1;
-          }
-          100%{
-              opacity: 0;
-          }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .buttonGroup {
+      width: 100%;
+      margin: 70px 0 0 80px;
+
+      @media screen and (max-width: 1222px) {
+        position: absolute;
+        margin: 170px 40px;
+
+      }
+
+      @media screen and (max-width: 693px) {
+        width: 300px;
+        margin: 100px 30%;
       }
 
 
+      a {
+        text-decoration: none;
 
-      .buttonGroup {
-        width: 90%;
-        margin: 60px 94px;
-        //text-align: center;
+      }
 
-        
-        a{
-          text-decoration: none;
-          
-        }
-      
       button {
         margin: 20px;
         outline: none;
-        
-      
+
+        @media screen and (max-width: 693px) {
+          margin: 15px 20px;
+        }
       }
+
       .custom-btn {
-       width: 210px;
-       height: 52px;
-      /*   padding: 10px 25px; */
+        width: 210px;
+        height: 52px;
         border: 2px solid white;
-       // font-family: 'Lato', sans-serif;
         font-weight: 500;
         background: rgba(14, 13, 13, .6);
         cursor: pointer;
         transition: all 0.3s ease;
         position: relative;
         display: inline-block;
+
+        @media screen and (max-width: 1333px) {
+          width: 180px;
+          height: 49px;
+          margin-left: 30px;
+        }
+
+        @media screen and (max-width: 702px) {
+          margin-left: 0;
+          width: 165px;
+          height: 39px;
+        }
       }
-      
-      .btn-text{
+
+      .btn-text {
         font-family: $mainFont;
         font-weight: 300;
         font-size: 1.4em;
-        color:white;
+        color: white;
         position: relative;
-        margin:0;
-        padding-top:5px;
+        margin: 0;
+        padding-top: 5px;
+
+        @media screen and (max-width: 702px) {
+          font-size: 1.3em;
+          padding: 0;
+        }
       }
+
       .btn-3 {
         line-height: 39px;
         padding: 0;
       }
- 
+
       .btn-3 span {
         position: relative;
         color: white;
         display: block;
         width: 100%;
         height: 100%;
-      ;
+        ;
       }
+
       .btn-3:before,
       .btn-3:after {
         position: absolute;
@@ -124,20 +196,25 @@
         background: white;
         transition: all 0.3s ease;
       }
+
       .btn-3:before {
         height: 0%;
         width: 3px;
       }
+
       .btn-3:after {
         width: 0%;
         height: 3px;
       }
+
       .btn-3:hover:before {
         height: 100%;
       }
+
       .btn-3:hover:after {
         width: 100%;
       }
+
       .btn-3 span:before,
       .btn-3 span:after {
         position: absolute;
@@ -147,30 +224,67 @@
         background: white;
         transition: all 0.3s ease;
       }
+
       .btn-3 span:before {
         width: 3px;
         height: 0%;
       }
+
       .btn-3 span:after {
         width: 0%;
         height: 3px;
       }
+
       .btn-3 span:hover:before {
         height: 100%;
-        color:white;
+        color: white;
       }
+
       .btn-3 span:hover:after {
         width: 100%;
       }
+
+
     }
+
+    //button-group
+
 
   }
 
-    .right{
-      flex:.6;
+  //left
 
-      .avatar{
-        margin: 25% 0;
+
+
+  .right {
+    flex: .6;
+
+    .avatar {
+      margin: 25% 0;
+      height: 412px;
+      width: 412px;
+
+      @media screen and (max-width: 992px) {
+        height: 192px;
+        width: 192px;
       }
+
+      @media screen and (max-width: 1333px) {
+        height: 292px;
+        width: 292px;
+        padding-top: 60px;
+      }
+
+      @media screen and (max-width: 700px) {
+        height: 152px;
+        width: 152px;
+        position: absolute;
+        left: 30%;
+        margin-top: auto;
+        padding-top: 30px;
+      }
+
     }
+  }
+
 }

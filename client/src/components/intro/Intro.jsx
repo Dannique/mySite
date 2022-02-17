@@ -29,21 +29,21 @@ export default function Intro() {
              <h1 className="firstText">Hi!</h1>
              <h2 className="introTwo">My Name Is Dannique.</h2>
              <h2 className="introTwo"> I Am A Self-Taught Full-Stack Web Developer.</h2>
-             <h3> I got your back when it comes to: <b><span ref={textRef}></span></b></h3>  
+             <h3> I got your back when it comes to: <br className="break"/> <b><span ref={textRef}></span></b></h3>  
              </div>
 
 
            <div class="buttonGroup">
-              <button class="custom-btn btn-3"><a href="#about"><span className='border'><p className='btn-text'>About Me</p></span></a></button>
-              <button class="custom-btn btn-3"><a href="#portfolio"><span className='border'><p className='btn-text'>Projects</p></span></a></button> 
-              <button class="custom-btn btn-3"><a href="#contact"><span className='border'><p className='btn-text'>Contact Me</p></span></a></button>
+              <button class="custom-btn btn-3 about-btn"><a href="#about"><span className='border'><p className='btn-text'>About Me</p></span></a></button>
+              <button class="custom-btn btn-3 portfolio-btn"><a href="#portfolio"><span className='border'><p className='btn-text'>Projects</p></span></a></button> 
+              <button class="custom-btn btn-3 contact-btn"><a href="#contact"><span className='border'><p className='btn-text'>Contact Me</p></span></a></button>
             </div>
 
           </div>
 
         <div className='right'>
           <div className='avatarDiv'>
-               <img src={Me} alt="cartoon of me" className='avatar' height="412px" width="412px" />  
+               <img src={Me} alt="cartoon of me" className='avatar'/>  
              </div>
         </div>
 
