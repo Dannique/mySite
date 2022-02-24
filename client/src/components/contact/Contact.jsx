@@ -55,7 +55,7 @@ export default function Contact() {
 
         </div>
           
-        <p className="copyright">Handcrafted by ©Dannique 2022</p>
+        <p className="copyright">© Handcrafted by Dannique 2022</p>
        
       </div>
 

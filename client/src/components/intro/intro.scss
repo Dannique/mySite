@@ -108,7 +108,7 @@
 
     .buttonGroup {
       width: 100%;
-      margin: 70px 0 0 80px;
+      margin: 120px 0 0 115px;
 
       @media screen and (max-width: 1222px) {
         margin: 120px 30px;
@@ -116,7 +116,7 @@
       }
 
       @media screen and (max-width: 693px) {
-        width: 300px;
+        width: 310px;
         text-align: center;
         margin-top: 50px;
         width: 90vw;
@@ -138,7 +138,7 @@
 
       .custom-btn {
         width: 210px;
-        height: 52px;
+        height: 56px;
         border: 2px solid white;
         font-weight: 500;
         background: rgba(14, 13, 13, .6);
@@ -148,26 +148,26 @@
         display: inline-block;
 
         @media screen and (max-width: 1333px) {
-          width: 180px;
-          height: 49px;
+          width: 175px;
+          height: 51px;
           margin-left: 30px;
         }
 
         @media screen and (max-width: 702px) {
           margin-left: 0;
-          width: 165px;
-          height: 39px;
+          width: 145px;
+          height: 42px;
         }
       }
 
       .btn-text {
         font-family: $mainFont;
         font-weight: 300;
-        font-size: 1.4em;
+        font-size: 1.55em;
         color: white;
         position: relative;
         margin: 0;
-        padding-top: 5px;
+        padding-top: 6px;
 
         @media screen and (max-width: 702px) {
           font-size: 1.2em;
