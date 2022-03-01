@@ -170,7 +170,7 @@ import blogSM from "./images/blogSM.png";
     expandedImg: blog,
     imagesm: blogSM,
     //      Text
-    titleh1: "BLog",
+    titleh1: "Daily Journal",
     expandedP: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     expandedH2: "Expanded h2",
     anchor: "http://github.com",
