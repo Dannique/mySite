@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 240px;
+    margin: 240px 15px 0;
     padding: 20px 0;
     background-color: $background;  
     border: 3px solid white;
@@ -127,24 +127,14 @@
     font-size: 1.8em;
   }
 
-
-
   /*     Horizontally Expanded     */
-
   .expandedCardHor {
-   // display: flex;
-   // margin: auto;
     position: absolute;
     flex-direction: column;
-   // display: grid;
     top: 0px;
-   //left: 1%;
-    //left:0px;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-   // min-height: 100vh;
-  // align-self: center;
     font-family: 'Sanchez';
 
     @media only screen and (max-width: 828px) {
