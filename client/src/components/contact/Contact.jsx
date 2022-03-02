@@ -34,7 +34,7 @@ export default function Contact() {
           </div>
 
           <div className="address">
-            <p> <LocationOnIcon className="icon address"/> <span className="text"> Dordrecht,<br/> <span className="NL">The Netherlands</span> </span></p>
+            <p> <LocationOnIcon className="icon address"/> <a href="https://www.google.com/maps/place/Dordrecht/@51.7686236,4.6127524,11z/data=!3m1!4b1!4m5!3m4!1s0x47c4281a9257b48f:0x400de5a8d1e6bc0!8m2!3d51.8132979!4d4.6900929"> <span className="text"> Dordrecht,<br/> <span className="NL">The Netherlands</span> </span> </a></p>
           </div>
 
           <div className="email">

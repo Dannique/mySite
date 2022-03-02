@@ -123,7 +123,9 @@ export default function Form(){
             endIcon={<SendIcon />}
             type="submit"
           >
-            {isLoading ? <CircularProgress className="loader" /> : "Send"}
+            {isLoading ? <CircularProgress size={30}
+          thickness={0.9}
+          className="loader" /> : "Send"}
           </Button>
   
       {  message && (
