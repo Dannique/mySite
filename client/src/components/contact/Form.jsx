@@ -22,6 +22,10 @@ const CssTextField = styled(TextField)({
     }
   });
 
+  // const CssTextareaAutoSize = styled(Textarea)({
+  //   ""
+  // })
+
 
 export default function Form(){
 
@@ -106,9 +110,10 @@ export default function Form(){
   
             <TextareaAutosize
             name="message"
-              placeholder="Message *"
+              placeholder="Message*"
               className="textArea"
-              minRows={6}
+            //  maxRows={6}
+              minRows={3}
               required
             />
   
@@ -130,8 +135,8 @@ export default function Form(){
   
       {  message && (
               <span class="submitMessage">
-                Thank you for reaching out <b> {name}</b>! <br />
-                I'll be in touch with you shortly😀.
+                Thank you for reaching out <b> {name}</b> ! <br />
+                <span className="submitDisplay"> I'll be in touch with you shortly😀.</span>
               </span>
             )}
   

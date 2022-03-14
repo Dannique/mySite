@@ -4,30 +4,72 @@
   text-align: center;
   background: linear-gradient(0deg, rgba(24, 24, 24, 1) 20%, rgba(24, 24, 24, 0) 67%);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+
+  @media only screen and (max-width: 1005px) {
+    flex-direction: column;
+  }
+
+  .arrow {
+    position: relative;
+    bottom: 48vh;
+
+    @media only screen and (max-width: 1005px) {
+      position: absolute;
+      bottom: 200px; ///////////???????????????????????????????
+
+    }
+  }
 
   .formContainer {
     background: transparent;
-    padding: 10px 30px 10px 30px;
-    width: 100%;
-    margin: 50px auto;
+    max-width: 100%;
+    margin: 0 40px 120px 0;
+    flex: 1;
+
+    @media only screen and (max-width: 1005px) {
+      flex: .8;
+      margin: 0 5px 8px 0;
+    }
 
     h1 {
       letter-spacing: 3px;
+      margin-bottom: 50px;
       text-align: center;
       font-family: $h1Font;
       font-weight: bold;
       font-size: 2.5em;
       color: $pink;
+
+      @media only screen and (max-width: 1005px) {
+        margin-bottom: 10px;
+        font-size: 2em;
+      }
+
+      @media only screen and (max-width: 490px) {
+        font-size: 1.6em;
+      }
     }
 
     .formDiv {
-      margin: 60px 400px;
       border: 3px solid #fff;
       background-color: rgba(0, 0, 0, 0.418);
       padding: 60px 80px 10px 80px;
       overflow: hidden;
 
+      @media only screen and (max-width: 600px) {
+        padding: 30px 45px 5px 45px;
+      }
+
+      @media only screen and (max-width: 360px) {
+        padding: 25px 25px 5px 25px;
+      }
+
       form {
+        margin: auto;
         display: flex;
         flex-direction: column;
       }
@@ -35,9 +77,15 @@
       .input {
         margin-bottom: 25px;
         border-radius: 5px;
-        width: 368px;
+        width: 368px;  
         align-self: center;
         background-color: rgb(218, 218, 218);
+
+        @media only screen and (max-width: 600px) {
+          width: 250px;
+          height: 55px;
+          margin-bottom: 8px;
+        }
       }
 
       .textArea {
@@ -50,6 +98,11 @@
         border: 1px solid rgba(8, 8, 8, 0.2);
         background-color: rgb(218, 218, 218);
         padding: 10px;
+
+        @media only screen and (max-width: 600px) {
+           width: 230px;
+          height: 130px;
+        }
 
         &:focus {
           outline: 2px solid $pink;
@@ -75,6 +128,7 @@
         color: #fff;
         padding: 0;
         margin-bottom: 6px;
+
       }
 
       button {
@@ -87,6 +141,10 @@
         border-radius: 5px;
         font-weight: 500;
         cursor: pointer;
+
+        @media only screen and (max-width: 600px) {
+          margin: 15px auto 10px;
+        }
 
         &:hover {
           background-color: $darkPink;
@@ -108,50 +166,123 @@
         font-weight: 400;
         font-size: 1em;
         color: #fff;
+
+        @media only screen and (max-width: 600px) {
+          margin: 0;
+        }
+
+        .submitDisplay {
+          @media only screen and (max-width: 600px) {
+            display: none;
+          }
+        }
+
       }
 
     }
   }
 
   .footerRight {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    height: 104vh;
+    flex: .25;
+    //  flex-direction: column;
     background-color: rgba(0, 0, 0, 0.418);
     color: #fff;
-    width: 17%;
-    margin-left: auto;
     border-left: 3px solid #fff;
+
+    @media only screen and (max-width: 1750px) {
+      flex: .4
+    }
+
+    @media only screen and (max-width: 1439px) {
+      flex: .5
+    }
+
+    @media only screen and (max-width: 1275px) {
+      flex: .7
+    }
+
+    @media only screen and (max-width: 1005px) {
+      width: 100vw;
+      height: 35vh;
+      border-left: none;
+      border-top: 3px solid #fff;
+    }
+    @media only screen and (max-width: 630px) {
+      border-top: 1px solid #fff;
+    }
 
 
     hr {
       margin-top: 30px;
       text-align: center;
-      width: 90px;
+      max-width: 90px;
       height: 2px;
       border: none;
       background-color: #fff;
+
+      @media only screen and (max-width: 1005px) {
+        display: none;
+      }
     }
 
     h1 {
-      margin-top: 80px;
+      margin-top: 120px;
       letter-spacing: 3px;
       text-align: center;
       font-family: $h1Font;
       font-weight: bold;
       font-size: 2.5em;
       color: $pink;
+
+      @media only screen and (max-width: 1090px) {
+        margin-top: 70px;
+      }
+
+      @media only screen and (max-width: 1005px) {
+        display: none;
+      }
     }
 
     .details {
       text-align: left;
       font-weight: 300;
-      margin: 60px 27px;
-      height: 100%;
+      margin: 110px 27px;
+      // height: 90%;
       font-size: 1.3em;
+
+      @media only screen and (max-width: 1090px) {
+        margin: 50px 20px;
+        font-size: 1.2em;
+      }
+
+      @media only screen and (max-width: 1005px) {
+        margin: 20px 15px 0 10px;
+       // height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2em;
+        height: 150px;
+      }
+
+      @media only screen and (max-width: 630px) {
+        font-size: 1em;
+       margin:0 15px 0 0;
+      }
+
+      .detail {
+        padding-top: 4px;
+        @media only screen and (max-width: 630px) {
+          height: 50px;
+        }
+      }
 
       .NL {
         margin-left: 43px;
+
+        @media only screen and (max-width: 1005px) {
+          margin-left: 30px;
+        }
       }
 
       a {
@@ -168,18 +299,58 @@
         position: relative;
         margin: 10px 13px 0 0;
         top: 6px;
+
+        @media only screen and (max-width: 1005px) {
+          margin: 10px 4px 0 0;
+          color: $pink;
+        }
+
+        @media only screen and (max-width: 630px) {
+          margin: 10px 5px 0 0
+        }
+
       }
 
       .text {
         margin-left: 4px;
+
+        @media only screen and (max-width: 1005px) {
+          margin: 0;
+        }
       }
+
+      // .group1 .group2 .group3{
+      //   @media only screen and (max-width: 860px) {
+      //     display: grid;
+      //   }
+      // }
+
+      // .group2{
+      //   display: contents;
+      //   @media only screen and (max-width: 860px) {
+      //     display: grid;
+      //   }
+      // }
 
     }
 
     .copyright {
       font-family: $exFont;
       text-align: center;
-      margin-bottom: 40px;
+      position: relative;
+      bottom: 0px;
+      top: 80px;
+
+      @media only screen and (max-width: 1090px) {
+        // bottom: 310px;
+        margin: 0 10px 0 4px;
+        top: 0;
+      }
+
+      @media only screen and (max-width: 1005px) {
+        top: 30px;
+
+      }
     }
 
   }
