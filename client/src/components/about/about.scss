@@ -29,6 +29,10 @@
       margin-top: 5px;
       font-family: $fontTwo;
     }
+    @media screen and (max-width: 370px) {
+      font-size: 1.2em;
+      margin: 0 0 5px 0;
+    }
   }
 
   .top {
@@ -60,7 +64,7 @@
         }
 
         @media screen and (max-width: 555px) {
-          font-size: 1em;
+          font-size: .9em;
           letter-spacing: .7px;
           margin-top: 3px;
         }
@@ -92,6 +96,8 @@
 
         @media screen and (max-width: 555px) {
           height: 55px;
+          font-size: 1em;
+          margin: 3px 0 0 0;
         }
       }
 
@@ -120,6 +126,9 @@
           position: relative;
           right: 8px;
           bottom: 38px;
+        }
+        @media screen and (max-width: 360px) {
+          margin-left: 5px;
         }
 
         a {
@@ -156,6 +165,7 @@
           @media screen and (max-width: 360px) {
             width: 110px;
             height: 35px;
+            
 
           }
         }
@@ -272,10 +282,12 @@
         font-weight: 700;
         font-family: $fontTwo;
       }
+      @media screen and (max-width: 360px) {
+        font-size: 1.2em;
+      }
     }
 
     .listDiv {
-      //321px will fall apart
       display: inline-block;
       text-align: center;
       color: #FFF;
@@ -293,8 +305,12 @@
       @media screen and (max-width: 555px) {
         position: relative;
         bottom: 2px;
-        height: 215px;
+        height: 205px;
         overflow: hidden;
+      }
+      @media screen and (max-width: 360px) {
+        padding-right: 10px;
+        height: 160px;
       }
 
       .skillUl {
@@ -319,6 +335,9 @@
           position: relative;
           bottom: 10px;
         }
+        @media screen and (max-width: 360px) {
+          font-size: .8em;
+        }
 
         .express {
           font-family: $exFont;
@@ -335,6 +354,7 @@
             width: 120px;
           }
 
+
           .skillIcon {
             padding-right: 13px;
 
@@ -347,6 +367,11 @@
             @media screen and (max-width: 702px) {
               padding-right: 5px;
             }
+            @media screen and (max-width: 360px) {
+              width: 14px;
+              height: 14px;
+              padding-right: 3px;
+            }
           }
 
           .ejs {
@@ -356,6 +381,10 @@
             @media screen and (max-width: 702px) {
               height: 10px;
               width: 17px;
+            }
+            @media screen and (max-width: 360px) {
+              width:13px;
+              height:9px
             }
           }
 
@@ -377,6 +406,9 @@
         @media screen and (max-width: 555px) {
           bottom: 50px;
         }
+        @media screen and (max-width: 360px) {
+          bottom:62px;
+        }
 
       }
 
@@ -385,7 +417,11 @@
           position: relative;
           bottom: 50px;
         }
+        @media screen and (max-width: 360px) {
+          bottom:62px;
+        }
       }
+
 
     }
   }
