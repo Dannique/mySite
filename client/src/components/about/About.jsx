@@ -16,42 +16,32 @@ import sass from "../../images/sass.png"
 
 export default function About() {
     return(
-    <div className="about" id="about">
-       
+        <div className="about" id="about">
         <Arrow/>
-        <FadeIn>
-        <div className="top">
+          <FadeIn>
+            <div className="top">
 
-          <div className="textDiv">
-            <h1>ABOUT ME</h1>
-            <p className="aboutText name">My name is Dannique De Klerk, and I'm based in the Netherlands.</p>
-            <p className="aboutText"> 
-                I'm constantly looking into improving myself as a developer and a person. <br/>
-                Here to help you bring your ideas to reality, where it be front-end or server side, I'll be happy to help you reach your destination.<br/>
-                My drive to provide you with the best possible product is powered by a particular set of skills, coffee, and an undying love for my cats.
-             <span className="displayText">
-            <br/>
-                I help small businesses improve their online presence on time and on budget.
-            </span> 
-           </p> 
-            <p className="aboutTextBot">Got Any Questions? <br/> <a href="#contact" className="contactLink"> Contact Me </a>
-            <div className="btnDiv">
-            <button class="custom-btn btn-3"><a href={Resume} download="Dannique's CV"><span className='border'><p className='btn-text'>Download CV</p></span></a></button>
-            </div> 
-            </p>
+                <div className="textDiv">
+                    <h1>ABOUT ME</h1>
+                    <p className="aboutText name">My name is Dannique de Klerk, and I'm based in the Netherlands.</p>
+                    <p className="aboutText"> 
+                        I'm constantly looking into improving myself as a developer and a person. <br/>
+                        Here to help you bring your ideas to reality, where it be front-end or server side, I'll be happy to help you reach your destination.<br/>
+                        My drive to provide you with the best possible product is powered by a particular set of skills, coffee, and an undying love for my cats.
+                        <span className="displayText">
+                            <br/>
+                            I help small businesses improve their online presence on time and on budget.
+                        </span> 
+                    </p> 
+                    <p className="aboutTextBot">Got Any Questions? <br/> <a href="#contact" className="contactLink"> Contact Me </a>
+                    <div className="btnDiv">
+                        <button class="custom-btn btn-3"><a href={Resume} download="Dannique's CV"><span className='border'><p className='btn-text'>Download CV</p></span></a></button>
+                    </div> 
+                    </p>
+                </div>
+            </div>
 
-          </div>
-        
-        </div>
-
-        <div className="bottom">
-
-
-                {/* <div className="skillDiv">
-                <h1>SKILLS</h1>
-                <p className="skills">HTML5 <span className="displayW">W</span><span className="stripe"> | </span>CSS3 <span className="displayW">W</span><span className="stripe"> | </span>JavaScript<span className="stripe"> | </span>NodeJS<span className="stripe"> | </span>Git<span className="stripe"> | </span>Express<span className="stripe"> | </span>RESTful API<span className="stripe"> | </span>EJS<span className="stripe"> | </span>MongoDB <br/> <p> ReactJS<span className="stripe"> | </span>JQuery<span className="stripe"> | </span>Bootstrap <span className="bootstrapW displayW">W</span><span className="stripe"> | </span>Sass <span className="displayW">W</span><span className="stripe"> | </span>Material UI </p></p>
-                
-                </div> */}
+            <div className="bottom">
                 <div className="listDiv">
                     <h1>SKILLS</h1>
                    
@@ -85,12 +75,10 @@ export default function About() {
                                 <li><img src={jquery} height="25px" width="25px" alt="jqueryLogo" className="skillIcon"/>JQuery</li>
                                 <li><img src={sass} height="25px" width="25px" alt="sassLogo" className="skillIcon"/>Sass</li>
                             </ul>
-                        </div>
-
-                   
+                        </div>     
+                </div>
             </div>
+          </FadeIn>
         </div>
-        </FadeIn>
-    </div>
     )
 }
