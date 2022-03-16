@@ -211,6 +211,8 @@
     @media only screen and (max-width: 630px) {
       border-top: 1px solid #fff;
     }
+ 
+   
 
 
     hr {
@@ -267,7 +269,14 @@
 
       @media only screen and (max-width: 630px) {
         font-size: 1em;
-       margin:0 15px 0 0;
+       margin:0 20px 0 0;
+      }
+      @media only screen and (max-width: 479px) {
+        display: inline;
+      }
+
+      .group1{
+        display:grid;
       }
 
       .detail {
@@ -275,7 +284,16 @@
         @media only screen and (max-width: 630px) {
           height: 50px;
         }
+        // @media only screen and (max-width: 479px) {
+        //   display: flex;
+        //   flex-direction: column;
+        // }
       }
+
+      .address{
+        margin-top:0;
+      }
+
 
       .NL {
         margin-left: 43px;
@@ -285,15 +303,17 @@
         }
       }
 
-      a {
+      .anchorDetail {
         text-decoration: none;
         color: #fff;
+
+        &:hover {
+          color: $pink;
+          font-weight: bold;
+        }
       }
 
-      a:hover {
-        color: $pink;
-        font-weight: bold;
-      }
+
 
       .icon {
         position: relative;
@@ -308,7 +328,10 @@
         @media only screen and (max-width: 630px) {
           margin: 10px 5px 0 0
         }
-
+        @media only screen and (max-width: 479px) {
+          bottom: 20px;
+        
+        }
       }
 
       .text {
@@ -316,6 +339,10 @@
 
         @media only screen and (max-width: 1005px) {
           margin: 0;
+          color:rgb(184, 184, 184)
+        }
+        @media only screen and (max-width: 479px) {
+         
         }
       }
 
@@ -332,24 +359,32 @@
       //   }
       // }
 
+
+
     }
 
     .copyright {
       font-family: $exFont;
       text-align: center;
       position: relative;
-      bottom: 0px;
-      top: 80px;
+      bottom: 10px;
 
-      @media only screen and (max-width: 1090px) {
-        // bottom: 310px;
-        margin: 0 10px 0 4px;
-        top: 0;
-      }
+      // @media only screen and (max-width: 2000px) {
+      //  // bottom: 30px;
+      //   margin: 0 10px 0 4px;
+      //  // top: 0;
+      // }
 
       @media only screen and (max-width: 1005px) {
-        top: 30px;
+       top: 70px;
 
+      }
+      @media only screen and (max-width: 860px) {
+        top:50px;
+        bottom: 10px;
+      }
+      @media only screen and (max-width: 630px) {
+        top:0;
       }
     }
 

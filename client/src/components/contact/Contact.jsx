@@ -21,11 +21,11 @@ export default function Contact() {
   return (
 
     <div id="contact" className="contact">
- <Arrow className="arrow" />
+
+      <Arrow className="arrow" />
       <FadeIn>
         <Form/>
       </FadeIn>
-     
 
       <div className="footerRight">
         <h1>DETAILS</h1>
@@ -41,7 +41,7 @@ export default function Contact() {
           
 
           <div className="address detail">
-            <p> <LocationOnIcon className="icon address"/> <a href="https://www.google.com/maps/place/Dordrecht/@51.7686236,4.6127524,11z/data=!3m1!4b1!4m5!3m4!1s0x47c4281a9257b48f:0x400de5a8d1e6bc0!8m2!3d51.8132979!4d4.6900929"> <span className="text"> Dordrecht,<br/> <span className="NL">The Netherlands</span> </span> </a></p>
+            <p> <a href="https://www.google.com/maps/place/Dordrecht/@51.7686236,4.6127524,11z/data=!3m1!4b1!4m5!3m4!1s0x47c4281a9257b48f:0x400de5a8d1e6bc0!8m2!3d51.8132979!4d4.6900929" className="anchorDetail"> <span className="text"> <LocationOnIcon className="icon address"/> Dordrecht,<br/> <span className="NL">The Netherlands</span> </span> </a></p>
           </div>
 
         </div>
@@ -49,11 +49,11 @@ export default function Contact() {
         <div className="group2">
 
           <div className="email detail">
-            <p> <EmailIcon className="icon email"/> <a href="mailto:danniqueeg@gmail.com"> <span className="text">danniqueeg@gmail.com </span></a></p>
+            <p> <EmailIcon className="icon email"/> <a href="mailto:danniqueeg@gmail.com" className="anchorDetail"> <span className="text">danniqueeg@gmail.com </span></a></p>
           </div>
-        
+
           <div className="github detail">
-            <p> <GitHubIcon className="icon gh"/> <a href="https://github.com/Dannique"><span className="text">GitHub</span></a></p>
+            <p> <GitHubIcon className="icon gh"/> <a href="https://github.com/Dannique" className="anchorDetail"><span className="text">GitHub</span></a></p>
           </div>
 
         </div>
@@ -61,11 +61,11 @@ export default function Contact() {
         <div className="group3">
 
           <div className="linkedin detail">
-            <p> <LinkedInIcon className="icon li"/> <a href="linkedin.com"><span className="text">LinkedIn</span></a></p>
+            <p> <LinkedInIcon className="icon li"/> <a href="linkedin.com" className="anchorDetail"><span className="text">LinkedIn</span></a></p>
           </div>
 
           <div className="cv detail">
-            <p> <PictureAsPdfIcon className="icon cv"/>  <a href={Resume} download="Dannique's CV"><span className="text">Resume</span></a></p>
+            <p> <PictureAsPdfIcon className="icon cv"/>  <a href={Resume} download="Dannique's CV" className="anchorDetail"><span className="text">Resume</span></a></p>
           </div>
 
           </div>
