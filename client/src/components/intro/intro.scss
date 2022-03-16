@@ -56,6 +56,10 @@
           font-size: 1.3rem;
           width: 90vw;
           font-weight: 300;
+          margin-left: 20px;
+        }
+        @media screen and (max-width: 360px) {
+          margin: 5px 0 5px 15px;
         }
       }
 
@@ -76,6 +80,10 @@
           margin-top: 20px;
           position: relative;
           width: 90vw;
+        }
+        @media screen and (max-width: 360px) {
+          font-size: 1.1em;
+          margin: 18px 0 5px 10px
         }
 
       }
@@ -188,6 +196,10 @@
         @media screen and (max-width: 550px) {
           font-size: 1.1em;
         }
+
+        @media screen and (max-width: 484px) {
+          padding-bottom:4px;
+        }
       }
 
       .btn-3 {
@@ -287,13 +299,16 @@
         height: 152px;
         width: 152px;
         position: absolute;
-        left: 30%;
+        left: 36%;
         margin-top: auto;
         padding-top: 30px;
       }
+      @media screen and (max-width: 466px) {
+        left: 30%
+      }
 
       @media screen and (max-width: 360px) {
-        left: 26%
+        left: 25%
       }
     }
   }
