@@ -85,9 +85,28 @@
           height: 40px;
           margin-bottom: 8px;
         }
+        @media only screen and (max-width: 420px) {
+          width: 200px;
+          height: 34px;
+        }
+        .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
+          @media only screen and (max-width: 420px) {
+            font-size:.8em;
+          }
+        }
+        .MuiOutlinedInput-root{
+          @media only screen and (max-width: 600px) {
+            width: 250px;
+            height: 40px;
+          }
+          @media only screen and (max-width: 420px) {
+            width: 200px;
+            height: 34px;
+          }
+        }
       }
 
-      .textArea {
+      textArea {
         margin: auto;
         width: 350px;
         height: 200px;
@@ -102,6 +121,11 @@
            width: 230px;
           height: 130px;
         }
+        @media only screen and (max-width: 420px) {
+          width:190px;
+          padding:5px
+        }
+        
 
         &:focus {
           outline: 2px solid $pink;
@@ -117,8 +141,15 @@
         }
 
         &::placeholder {
-          color: rgba(49, 53, 53, 0.671);
-
+          color: rgba(33, 34, 34, 0.671);
+          font-family:"Roboto","Helvetica","Arial",sans-serif;
+          font-weight: 400;
+          font-size: .9em;
+      
+          @media only screen and (max-width: 420px) {
+            font-size: .7em;
+            padding-left: 10px;
+          }
         }
 
       }
@@ -127,7 +158,9 @@
         color: #fff;
         padding: 0;
         margin-bottom: 6px;
-
+        @media only screen and (max-width: 420px) {
+          font-size: .8em;
+        }
       }
 
       button {
@@ -138,11 +171,16 @@
         background-color: $pink;
         border: none;
         border-radius: 5px;
-        font-weight: 500;
+        font-weight: 600;
         cursor: pointer;
 
         @media only screen and (max-width: 600px) {
           margin: 15px auto 10px;
+        }
+        @media only screen and (max-width: 420px) {
+          width:105px;
+          height:38px;
+          font-size: .85em;
         }
 
         &:hover {
