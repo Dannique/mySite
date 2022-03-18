@@ -87,7 +87,7 @@ export default function Form(){
               label="Name"
               onChange={handleName}
               variant="outlined"
-              className="input"
+              className="input name"
               required
             />
   
