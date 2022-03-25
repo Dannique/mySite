@@ -17,7 +17,7 @@ import sass from "../../images/sass.png"
 export default function About() {
     return(
         <div className="about" id="about">
-        <Arrow/>
+        <Arrow className="arrow"/>
           <FadeIn>
             <div className="top">
 

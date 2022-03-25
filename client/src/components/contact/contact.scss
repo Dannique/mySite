@@ -13,15 +13,11 @@
     flex-direction: column;
   }
 
-  .arrow {
-    position: relative;
-    bottom: 48vh;
-
-    @media only screen and (max-width: 1005px) {
-      // position: absolute;
-       left:10px
+   .arrow {
+    @media only screen and (max-width: 325px) {
+      right:20px;
     }
-  }
+   }
 
   .formContainer {   
     background: transparent;
@@ -33,12 +29,6 @@
       flex: .8;
       margin: 0 5px 25px 0;
     }
-    
-    @media only screen and (max-width: 490px) {
-      position: relative;
-      bottom:40px;
-    }
-
 
     h1 {
       letter-spacing: 3px;
@@ -135,7 +125,6 @@
           padding:5px
         }
         
-
         &:focus {
           outline: 2px solid $pink;
         }
@@ -257,12 +246,6 @@
     @media only screen and (max-width: 630px) {
       border-top: 1px solid #fff;
     }
-    // @media only screen and (max-width: 420px) {
-    //   height:120px
-    // }
-
-   
-
 
     hr {
       margin-top: 30px;
