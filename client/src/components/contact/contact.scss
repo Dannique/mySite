@@ -14,6 +14,20 @@
   }
 
    .arrow {
+     top:310vh;
+     @media screen and (max-width: 1420px) {
+      position:absolute;
+      left:31px;
+      margin-top: 39px;
+      z-index: 1000;
+     }
+     @media only screen and (max-width: 1005px) {
+      margin-top:45px;
+      left:auto;
+      right: 80px;
+      width: 40px;
+      height: 40px;
+     }
     @media only screen and (max-width: 325px) {
       right:20px;
     }
@@ -220,7 +234,6 @@
   .footerRight {   
     height: 104vh;
     flex: .25;
-    //  flex-direction: column;
     background-color: rgba(0, 0, 0, 0.418);
     color: #fff;
     border-left: 3px solid #fff;
@@ -428,8 +441,8 @@
         color:rgb(201, 201, 201);
         font-size: 11px;
         margin-bottom:auto;
-        position: absolute;
-        top:389vh;
+       position: absolute;
+       top:389vh;
         left: 27vw;
       }
       @media only screen and (max-width: 330px) {
