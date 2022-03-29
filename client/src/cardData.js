@@ -32,10 +32,11 @@ import blogSM from "./images/blogSM.png";
     imagesm: simonSM,
     //      Text
     titleh1: "Simon Game",
-    expandedP: "Lorem ipsum dolor sit amet",
-    expandedH2: "Expanded h2",
-    anchor: "http://github.com",
-    anchorText: "Check out my code at github.com"
+    expandedP2: "Practiced with JQuery and callback functions.",
+    expandedP: "A fun game to press the correct color in the order in which the pattern excecutes.",
+    expandedH2: "Simon Says",
+    anchor: "https://github.com/Dannique/SimonSays",
+    anchorText: "Check out my code at github"
   },
   {
     //      Styling
@@ -48,9 +49,10 @@ import blogSM from "./images/blogSM.png";
     imagesm: planetMotionSM,
     //      Text
     titleh1: "Motion of the Planets",
-    expandedP: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    expandedH2: "Expanded h2",
-    anchor: "http://github.com",
+    expandedP2: "Practiced with HTML Canvas and the constructor function method",
+    expandedP: "Shows how long it takes for the planets from Mercury to Mars to orbit around the Sun.",
+    expandedH2: "Moving Planets",
+    anchor: "https://github.com/Dannique/Motion-of-the-Inner-Planets",
     anchorText: "Check out my code at github.com"
   },
   {
@@ -64,10 +66,11 @@ import blogSM from "./images/blogSM.png";
     expandedImg: tinpurr,
     //      Text
     titleh1: "TinPurr",
-    expandedP: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    expandedH2: "Expanded h2",
-    anchor: "http://github.com",
-    anchorText: "Check out my code at github.com"
+    expandedP2: "Practiced with Bootstrap",
+    expandedP: "A design focused on selling a product.",
+    expandedH2: "Tinpurr UI",
+    anchor: "https://tinpurr2021.herokuapp.com",
+    anchorText: "Check out my deployed website"
   },
   {
     //      Styling
@@ -80,10 +83,11 @@ import blogSM from "./images/blogSM.png";
     imagesm: todoSM,
     //      Text
     titleh1: "To-do List",
-    expandedP: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    expandedH2: "Expanded h2",
-    anchor: "http://github.com",
-    anchorText: "Check out my code at github.com"
+    expandedP2: "Practiced with NodeJS, EJS and MongoDB.",
+    expandedP: "A to-do list with an option to create your own custom list by name to get directed by route and the option to delete items by checkbox.",
+    expandedH2: "To-do List",
+    anchor: "http://todolist-dannique.herokuapp.com",
+    anchorText: "Check out my deployed website"
   },
   {
     //      Styling
@@ -96,10 +100,11 @@ import blogSM from "./images/blogSM.png";
     imagesm: diceeSM,
     //      Text
     titleh1: "Dicee",
-    expandedP: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    expandedH2: "Expanded h2",
-    anchor: "http://github.com",
-    anchorText: "Check out my code at github.com"
+    expandedP2: "Practiced with DOM Manipulation.",
+    expandedP: "A simple game when you press the button, the dice images will show a random outcome. The player with the highest result, wins.",
+    expandedH2: "Dicee Game",
+    anchor: "https://github.com/Dannique/Dicee",
+    anchorText: "Check out my code at github"
   },
   {
     //      Styling
@@ -112,10 +117,11 @@ import blogSM from "./images/blogSM.png";
     expandedImg: drumkit,
     //      Text
     titleh1: "Drumkit",
-    expandedP: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    expandedP2: "Practiced with DOM Manipulation, Callback Functions and Switch Statments.",
+    expandedP: "A fun app where you can use your keys to play the drums.",
     expandedH2: "Expanded h2",
-    anchor: "http://github.com",
-    anchorText: "Check out my code at github.com"
+    anchor: "https://github.com/Dannique/Drum-Kit",
+    anchorText: "Check out my code at github"
   },
   {
     normalCard: "normalCard",
@@ -126,11 +132,12 @@ import blogSM from "./images/blogSM.png";
     expandedImg: weather,
     imagesm: weatherSM,
     //      Text
-    titleh1: "Weather App",
-    expandedP: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    expandedH2: "Expanded h2",
-    anchor: "http://github.com",
-    anchorText: "Check out my code at github.com"
+    titleh1: "Weather-App",
+    expandedP2: "Practiced with the OpenWeatherMap API, NodeJS and Bootstrap.",
+    expandedP: "Type a place anywhere in the world in the input and get information about the weather.",
+    expandedH2: "World Weather",
+    anchor: "https://github.com/Dannique/WorldWeather",
+    anchorText: "Check out my code at github"
   },
   {
     //      Styling
@@ -143,11 +150,13 @@ import blogSM from "./images/blogSM.png";
     imagesm: secretsSM,
     //      Text
     titleh1: "Secrets",
-    expandedP: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    expandedH2: "Expanded h2",
-    anchor: "http://github.com",
-    anchorText: "Check out my code at github.com"
+    expandedP2: "Practiced with Oauth, PassportJS, MongoDB, EJS and NodeJS.",
+    expandedP: "You can log in with E-mail, Facebook and Google to post a secret anonymously. Search your own posts with the option to delete it.",
+    expandedH2: "Secret App",
+    anchor: "https://github.com/Dannique/Secrets",
+    anchorText: "Check out my code at github"
   }, {
+    //      Styling
     normalCard: "normalCard",
     classexpandedCard: "expandedCardVer newsletterColor",
     classExpandedImg: "classExpandedImgVer",
@@ -157,11 +166,13 @@ import blogSM from "./images/blogSM.png";
     imagesm: newsletterSM,
     //      Text
     titleh1: "Newsletter Signup",
-    expandedP: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
-    expandedH2: "Expanded h2",
-    anchor: "http://github.com",
-    anchorText: "Check out my code at github.com"
+    expandedP2: "Practiced with MailChimp API, NodeJS, https and Bootstrap.",
+    expandedP: "A newsletter sign-up page with an integrated API from MailChimp.",
+    expandedH2: "Newsletter Signup",
+    anchor: "http://newslettersignup-2020.herokuapp.com",
+    anchorText: "Check out my deployed website"
   }, {
+    //      Styling
     normalCard: "normalCard",
     info: "infoHor",
     classexpandedCard: "expandedCardHor motionColor",
@@ -171,9 +182,10 @@ import blogSM from "./images/blogSM.png";
     imagesm: blogSM,
     //      Text
     titleh1: "Daily Journal",
-    expandedP: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    expandedH2: "Expanded h2",
-    anchor: "http://github.com",
+    expandedP2: "Practiced with EJS, NodeJS, MongoDB and Bootstrap",
+    expandedP: `Free to post app, with a compose page and a "read more" option to read the complete post.`,
+    expandedH2: "Daily Journal Blog",
+    anchor: "https://github.com/Dannique/Blog",
     anchorText: "Check out my code at github.com"
   }
 ];

@@ -28,8 +28,8 @@ export default function Card(props) {
             <a href={props.anchor} target="_blank" rel="noopener noreferrer">
               {props.anchorText}
             </a>
-
-            <p>{props.expandedP}</p>
+            <p className="expandedP2">{props.expandedP2}</p>
+            <p className="expandedP">{props.expandedP}</p>
           </motion.div>
         </motion.div>
       ) : (
