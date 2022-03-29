@@ -38,7 +38,6 @@ export default function Portfolio() {
       <FadeIn>
       <div className="card-container">
 
-
       {cards.map(createCard)}
 
       </div>
