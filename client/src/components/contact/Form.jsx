@@ -46,11 +46,14 @@ export default function Form(){
       }
     
       const handleSubmit = (e) => {
-    
+        
+       const userID = process.env.REACT_APP_USER_ID;
+       const serviceID = process.env.REACT_APP_SERVICE_ID;
+
         e.preventDefault();
     
         emailjs.sendForm(
-          'service_brkwwnk', 'template_r2z7sj8', form.current,  'user_wWj68q5Xptjr31C0nghjM'
+          serviceID,'template_r2z7sj8',form.current,userID
         )
           .then((res) => {
             console.log('SUCCESS!', res.status, res.text);
@@ -61,7 +64,7 @@ export default function Form(){
           })
           .catch((err) => {
             console.log(err.text);
-            alert("eeehh?", err)
+            alert("There was a problem with sending the email, please try again.", err)
           });
       };
 

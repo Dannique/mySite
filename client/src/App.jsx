@@ -4,7 +4,8 @@ import Intro from './components/intro/Intro'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import LoadingScreen from './components/loader/LoadingScreen';
-import './app.scss'
+import './app.scss';
+
 
 //import {} from '@mui/icons-material';
 
