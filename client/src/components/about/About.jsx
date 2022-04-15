@@ -35,7 +35,7 @@ export default function About() {
                     </p> 
                     <p className="aboutTextBot">Got Any Questions? <br/> <a href="#contact" className="contactLink"> Contact Me </a>
                     <div className="btnDiv">
-                        <button class="custom-btn btn-3"><a href={Resume} download="Dannique's CV"><span className='border'><p className='btn-text'>Download CV</p></span></a></button>
+                        <button class="custom-btn btn-3"><a href={Resume} download="CV_Dannique_de_Klerk"><span className='border'><p className='btn-text'>Download CV</p></span></a></button>
                     </div> 
                     </p>
                 </div>

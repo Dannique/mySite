@@ -108,7 +108,7 @@ export default function Form(){
   
             <TextareaAutosize
             name="message"
-              placeholder="Message*"
+              placeholder="Message *"
               className="textArea"
             //  maxRows={6}
               minRows={3}
