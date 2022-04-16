@@ -41,7 +41,7 @@ export default function Contact() {
           
 
           <div className="address detail">
-            <p> <a href="https://www.google.com/maps/place/Dordrecht/@51.7686236,4.6127524,11z/data=!3m1!4b1!4m5!3m4!1s0x47c4281a9257b48f:0x400de5a8d1e6bc0!8m2!3d51.8132979!4d4.6900929" className="anchorDetail"> <LocationOnIcon className="icon address"/> <span className="text">Dordrecht,<br/> <span className="NL">The Netherlands</span> </span> </a></p>
+            <p> <a href="https://www.google.com/maps/place/Dordrecht/@51.7686236,4.6127524,11z/data=!3m1!4b1!4m5!3m4!1s0x47c4281a9257b48f:0x400de5a8d1e6bc0!8m2!3d51.8132979!4d4.6900929" className="anchorDetail" target="_blank" rel="noreferrer noopener"> <LocationOnIcon className="icon address"/> <span className="text">Dordrecht,<br/> <span className="NL">The Netherlands</span> </span> </a></p>
           </div>
 
         </div>
@@ -53,7 +53,7 @@ export default function Contact() {
           </div>
 
           <div className="github detail">
-            <p> <a href="https://github.com/Dannique" className="anchorDetail"> <GitHubIcon className="icon gh"/> <span className="text">GitHub</span></a></p>
+            <p> <a href="https://github.com/Dannique" className="anchorDetail" target="_blank" rel="noreferrer noopener"> <GitHubIcon className="icon gh"/> <span className="text">GitHub</span></a></p>
           </div>
 
         </div>
@@ -61,7 +61,7 @@ export default function Contact() {
         <div className="group3">
 
           <div className="linkedin detail">
-            <p> <a href="https://www.linkedin.com/in/dannique-d-294204214/" className="anchorDetail"> <LinkedInIcon className="icon li"/> <span className="text">LinkedIn</span></a></p>
+            <p> <a href="https://www.linkedin.com/in/dannique-d-294204214/" className="anchorDetail" target="_blank" rel="noreferrer noopener"> <LinkedInIcon className="icon li"/> <span className="text">LinkedIn</span></a></p>
           </div>
 
           <div className="cv detail">
