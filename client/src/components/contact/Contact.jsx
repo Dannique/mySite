@@ -61,7 +61,7 @@ export default function Contact() {
         <div className="group3">
 
           <div className="linkedin detail">
-            <p> <a href="https://www.linkedin.com/in/dannique-d-294204214/" className="anchorDetail" target="_blank" rel="noreferrer noopener"> <LinkedInIcon className="icon li"/> <span className="text">LinkedIn</span></a></p>
+            <p> <a href="https://www.linkedin.com/in/danniquedk/" className="anchorDetail" target="_blank" rel="noreferrer noopener"> <LinkedInIcon className="icon li"/> <span className="text">LinkedIn</span></a></p>
           </div>
 
           <div className="cv detail">
