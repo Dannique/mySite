@@ -121,7 +121,7 @@
           bottom: 38px;
         }
         @media screen and (max-width: 360px) {
-          margin: 3px 0 0 5px;
+          margin: 0 0 10px 5px;
         }
 
         a {
@@ -152,7 +152,7 @@
           @media screen and (max-width: 555px) {
             width: 108px;
             height: 32px;
-            border: 1px solid #FFF
+            border: 1px solid #FFF;
           }
 
         }
@@ -293,7 +293,7 @@
       }
       @media screen and (max-width: 360px) {
         padding-right: 10px;
-        height: 154px;
+        height: 158px;
       }
 
       .skillUl {
