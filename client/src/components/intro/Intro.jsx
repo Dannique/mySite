@@ -16,7 +16,7 @@ export default function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed:60,
-      strings:["JavaScript.", "Nodejs.", "MongoDB.", "EJS.", "RESTful API.", "ReactJS.", "JQuery.", "Git.","NPM.", "Bootstrap.", "HTML.", "CSS.", "Sass."],
+      strings:["JavaScript.", "Nodejs.", "MongoDB.", "EJS.", "RESTful API.", "ReactJS.", "JQuery.", "Git.","OAuth.", "Bootstrap.", "HTML.", "CSS.", "Sass."],
     });
   }, []);
 
