@@ -12,9 +12,8 @@
   .titleDiv {
     position: absolute;
     margin-top: 60px;
-   // margin-bottom: 150px;
     @media only screen and (max-width: 435px) {
-     // margin-bottom: 450px
+     margin-top:40px;
     }
     
 
@@ -29,8 +28,8 @@
         font-size: 1.8em;
       }
       @media only screen and (max-width: 435px) {
-       // margin:20px 0 5px 0;
         font-size: 1.4em;
+        font-family: $fontTwo;
       }
     }
 
@@ -48,28 +47,6 @@
 
   /*     Normal Card     */
 
-  // .card-container {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   padding: 20px 0;
-  //   margin-top:40px;
-  //   background-color: $background;  
-  //   border: 3px solid white;
-  //   flex-wrap: wrap;
-  //   max-width: 1200px;
-
-  //   @media only screen and (max-width: 1165px) {
-  //    // margin:200px 15px 0px;
-  //   }
-  //   @media only screen and (max-width: 635px) {
-  //   //  margin-top:100px;
-  //     padding: 3px;
-  //   }
-  //   @media only screen and (max-width: 435px) {
-  //    // margin: 90px 8px 0 8px;
-  //   }
-  // }
   .card-container {
     display: flex;
     justify-content: center;
@@ -82,14 +59,18 @@
     max-width: 1200px;
 
     @media only screen and (max-width: 1165px) {
-      margin:200px 15px 0px;
+      margin:300px 15px 0px;
     }
     @media only screen and (max-width: 635px) {
-      margin-top:100px;
+      margin-top:230px;
       padding: 3px;
     }
+    @media only screen and (max-width: 480px) {
+      margin-top: 130px;
+    }
+
     @media only screen and (max-width: 435px) {
-      margin: 90px 8px 0 8px;
+      margin: 150px 8px 0 8px;
     }
   }
 
@@ -111,7 +92,7 @@
       margin: 10px;
     }
 
-    @media only screen and (max-width: 685px) {
+    @media only screen and (max-width: 785px) {
       height: 90px;
       width: 90px
     }
