@@ -22,7 +22,7 @@ export default function Contact() {
 
     <div id="contact" className="contact">
 
-      <Arrow className="arrow" />
+      <Arrow arrowClass="arrow" />
       <FadeIn>
         <Form/>
       </FadeIn>

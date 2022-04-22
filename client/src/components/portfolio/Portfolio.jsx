@@ -30,7 +30,7 @@ function createCard(card) {
 export default function Portfolio() {
     return (
       <div className="portfolio" id="portfolio">
-       <Arrow className="arrow"/>
+      <Arrow arrowClass="arrow" />
        <div className='titleDiv'>
          <h1 className='title'>MY PROJECTS</h1>
          <p className='titleP'>Here are some of my projects screenshotted. There's link to the site or to Github, with an explanation. </p>
@@ -41,6 +41,7 @@ export default function Portfolio() {
       {cards.map(createCard)}
 
       </div>
+      
       </FadeIn>
      
     </div>
