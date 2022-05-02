@@ -28,6 +28,7 @@
       width: 40px;
       height: 40px;
      }
+     
      @media screen and (max-width: 690px) {
       width: 28px;
       height: 28px;
@@ -96,10 +97,13 @@
       .input {
         margin-bottom: 25px;
         border-radius: 5px;
-        width: 350px; 
+        width: 337px; 
         height:50px; 
         align-self: center;
+        outline:none;
         background-color: rgb(218, 218, 218);
+        border: 1px solid rgba(8, 8, 8, 0.2);
+        padding-left:10px;
 
         @media only screen and (max-width: 600px) {
           width: 250px;
@@ -110,22 +114,23 @@
           width: 200px;
           height: 34px;
         }
-        .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root{
+  
+        &:hover {
+          border: 1px solid rgba(8, 8, 8, .9);
+        }
+  
+        &::placeholder {
+          color: rgba(33, 34, 34, 0.671);
+          font-weight: 400;
+          font-size: 1.1em;
+          letter-spacing: .4px;
+      
           @media only screen and (max-width: 420px) {
-            font-size:.73em;
+            font-size: .9em;
+            padding: 0 4px 0 5px;
           }
         }
-        .MuiOutlinedInput-root{
-          height:50px;
-          @media only screen and (max-width: 600px) {
-            width: 250px;
-            height: 40px;
-          }
-          @media only screen and (max-width: 420px) {
-            width: 200px;
-            height: 39px;
-          }
-        }
+  
       }
       .name{
         margin-bottom: 20px;
@@ -133,40 +138,32 @@
           margin-bottom:12px;
         }
       }
-
+  
       textArea {
         margin: auto;
         width: 330px;
-        height: 200px;
+        height: 140px;
+        outline:none;
         font-size: 17px;
         font-weight: 300;
         border-radius: 5px;
         border: 1px solid rgba(8, 8, 8, 0.2);
         background-color: rgb(218, 218, 218);
         padding: 10px;
-
+  
         @media only screen and (max-width: 600px) {
-           width: 230px;
-          height: 130px;
+           width: 240px;
+          height: 120px;
         }
         @media only screen and (max-width: 420px) {
-          width:190px;
+          width:200px;
           padding:5px
         }
-        
-        &:focus {
-          outline: 2px solid $pink;
-        }
-
-        &:active {
-          border: 2px solid $pink;
-
-        }
-
+  
         &:hover {
           border: 1px solid rgba(8, 8, 8, .9);
         }
-
+  
         &::placeholder {
           color: rgba(33, 34, 34, 0.671);
           font-family:"Roboto","Helvetica","Arial",sans-serif;
@@ -178,8 +175,9 @@
             padding: 0 4px 0 10px;
           }
         }
-
+  
       }
+  
 
       .emailErr {
         color: #fff;

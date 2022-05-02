@@ -1,26 +1,10 @@
 import { React, useState, useRef } from "react";
 import emailjs from 'emailjs-com';
 import validator from 'validator';
-import { styled } from "@mui/material/styles";
-import TextField from "@mui/material/TextField";
-import TextareaAutosize from "@mui/material/TextareaAutosize";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import CircularProgress from "@mui/material/CircularProgress";
 
-const CssTextField = styled(TextField)({
-    "& label.Mui-focused": {
-      color: "#CA3E47;"
-    },
-    "& .MuiInput-underline:after": {
-      borderBottomColor: "#CA3E47;"
-    },
-    "& .MuiOutlinedInput-root": {
-      "&.Mui-focused fieldset": {
-        borderColor: "#CA3E47;"
-      }
-    }
-  });
 
 export default function Form(){
 
@@ -81,39 +65,34 @@ export default function Form(){
         <div className="formDiv"> 
   
           <form ref={form} onSubmit={handleSubmit} autoComplete="off">
-  
-            <CssTextField
-             type="text"
-             name="name"
-              autoComplete="off"
-              id="outlined-basic"
-              label="Name"
-              onChange={handleName}
-              variant="outlined"
-              className="input name"
-              required
-            />
-  
-            <CssTextField
-             name="email"
-             type="email"
-             onChange={(e) => validateEmail(e)}
-              id="outlined-basic"            
-              label="Email"
-              variant="outlined"
-              className="input"
-              required
-            />
+
+            <input
+            className="input name"
+            placeholder="Name *"
+            type="text"
+            name="name"
+            onChange={handleName}
+            id="name"
+            required
+          />
+
+          <input
+            className="input email"
+            placeholder="Email *"
+            type="email"
+            name="email"
+            onChange={(e) => validateEmail(e)}
+            id="name"
+            required
+          />
           <span className="emailErr">{emailErr}</span>
-  
-            <TextareaAutosize
+
+          <textarea
             name="message"
-              placeholder="Message *"
-              className="textArea"
-            //  maxRows={6}
-              minRows={3}
-              required
-            />
+            placeholder="Message *"
+            className="textArea"
+            required
+          />
   
             <Button
             onClick={() => {

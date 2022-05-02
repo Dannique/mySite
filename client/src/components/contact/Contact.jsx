@@ -8,10 +8,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import PersonIcon from "@mui/icons-material/Person";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'
 import Arrow from '../arrowup/Arrow'
-
-
 
 export default function Contact() {
 
