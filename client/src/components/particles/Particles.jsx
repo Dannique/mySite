@@ -12,7 +12,7 @@ let params = {
       }
     },
     color: {
-      value: ["#c311e7", "#b8e986", "#4dc9ff", "#ffd300", "#FF7E79"]
+      value: ["#e9505a", "#828282", "#508ead", "#dbc663", "#FF7E79"]
     },
     shape: {
       type: "circle",
