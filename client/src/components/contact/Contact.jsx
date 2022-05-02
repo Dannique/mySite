@@ -69,9 +69,7 @@ export default function Contact() {
           </div>
           
         </div>
-
         <p className="copyright"> Handcrafted by Dannique ©{year}</p> 
-       
       </div>
 
     </div>
